@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosify | AI Hospital System</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <div class="background-mesh">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="logo">Diagnosify<span class="dot">.</span>AI</div>
+        <div class="nav-links">
+            <a href="#team">Team</a>
+            <a href="#chatbot-section">RAG Chat</a>
+            <a href="#timeline">Roadmap</a>
+            <a href="#demo">Demo</a>
+            <a href="#source" class="btn-nav">GitHub</a>
+        </div>
+    </nav>
+
+    <header class="hero-container">
+        <div class="hero-content">
+            <div class="status-badge">
+                <span class="status-dot"></span> CS331 Capstone Project
+            </div>
+            <h1 class="hero-title">
+                The Future of <br>
+                <span class="glitch" data-text="Sentient Operations">Sentient Operations</span>
+            </h1>
+            <p class="hero-subtitle">
+                Moving beyond static records. <strong>Diagnosify</strong> integrates 
+                <strong>Computer Vision</strong> for biometric safety and 
+                <strong>RAG Architecture</strong> for context-aware patient care.
+            </p>
+            <div class="cta-group">
+                <a href="#demo" class="btn btn-primary">
+                    <i class="fas fa-play-circle"></i> Watch Walkthrough
+                </a>
+                <a href="https://github.com/raoabdulrafay05/diagnosify_site" target="_blank" class="btn btn-secondary">
+                    <i class="fas fa-code"></i> Source Code
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="glass-card visual-card">
+                <div class="scanner-overlay"></div> 
+                <div class="bio-icon-container">
+                    <i class="fas fa-user-astronaut icon-float"></i>
+                    <i class="fas fa-check-circle verified-badge"></i>
+                </div>
+                <div class="code-snippet">
+                    > ID: 2023017<br>
+                    > Face_ID: MATCHED<br>
+                    > Access: GRANTED
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+
+        <section id="stats" class="section-padding">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <h2 class="counter" data-target="99.8">0</h2><span class="symbol">%</span>
+                    <p>Face ID Accuracy</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="counter" data-target="20">0</h2><span class="symbol"> Days</span>
+                    <p>Dev Cycle (CPM)</p>
+                </div>
+                <div class="stat-item">
+                    <h2 class="counter" data-target="4">0</h2><span class="symbol"> Modules</span>
+                    <p>Integrated AI</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="chatbot-section" class="section-padding">
+            <div class="split-layout">
+                <div class="text-side">
+                    <h2><i class="fas fa-robot"></i> RAG Neural Agent</h2>
+                    <p class="lead-text">
+                        Unlike standard chatbots, Diagnosify doesn't hallucinate. It uses 
+                        <strong>Retrieval-Augmented Generation</strong>.
+                    </p>
+                    <ul class="tech-list">
+                        <li><i class="fas fa-check"></i> <strong>Ingestion:</strong> PDFs converted to vectors.</li>
+                        <li><i class="fas fa-check"></i> <strong>Storage:</strong> Pinecone Vector Database.</li>
+                        <li><i class="fas fa-check"></i> <strong>Generation:</strong> LLM answers using hospital context.</li>
+                    </ul>
+                    <div class="tech-badges">
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">OpenAI</span>
+                        <span class="tech-tag">Pinecone</span>
+                    </div>
+                </div>
+
+                <div class="visual-side">
+                    <div class="chat-interface">
+                        <div class="chat-header">
+                            <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                            <span>Diagnosify Agent (Live)</span>
+                        </div>
+                        <div class="chat-body">
+                            <div class="msg user">
+                                <p>What are the visiting hours?</p>
+                            </div>
+                            <div class="msg system">
+                                <p><i class="fas fa-cog fa-spin"></i> Retrieving Context from 'Policy.pdf'...</p>
+                            </div>
+                            <div class="msg bot">
+                                <p>Based on hospital policy, visiting hours are <strong>9 AM to 5 PM</strong> daily.</p>
+                            </div>
+                            <div class="msg user delay-1">
+                                <p>Book Dr. Ayesha for me.</p>
+                            </div>
+                             <div class="msg bot delay-2">
+                                <p>Checking availability... Slot confirmed for 2:00 PM.</p>
+                            </div>
+                        </div>
+                        <div class="chat-input-area">
+                            <div class="fake-input">Type your query...</div>
+                            <div class="send-btn"><i class="fas fa-paper-plane"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="section-padding">
+            <div class="section-header">
+                <h2>The Engineering Team</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="grid-cards">
+                <div class="profile-card">
+                    <div class="card-border"></div>
+                    <img src="rafay.jpg" alt="Abdul Rafay" class="avatar-img">
+                    <h3>Abdul Rafay</h3>
+                    <p class="role">Computer Vision Lead</p>
+                    <p class="id-badge">ID: 2023017</p>
+                    <p class="role-desc">Implemented DeepFace & Mask Detection.</p>
+                </div>
+                <div class="profile-card">
+                    <div class="card-border"></div>
+                    <img src="saad.jpg" alt="Saad Hassan" class="avatar-img">
+                    <h3>Saad Hassan</h3>
+                    <p class="role">RAG Architect</p>
+                    <p class="id-badge">ID: 2023621</p>
+                    <p class="role-desc">Built the LangChain pipeline & Pinecone Vector Database.</p>
+                </div>
+                <div class="profile-card">
+                    <div class="card-border"></div>
+                    <img src="mahad.jpg" alt="Mahad" class="avatar-img">
+                    <h3>Mahad</h3>
+                    <p class="role">Frontend & NLP</p>
+                    <p class="id-badge">ID: 2023461</p>
+                    <p class="role-desc">Developed the Intelligent Chatbot UI & Inquiry Agent.</p>
+                </div>
+                <div class="profile-card">
+                    <div class="card-border"></div>
+                    <img src="umair.jpg" alt="Umair Arshad" class="avatar-img">
+                    <h3>Umair Arshad</h3>
+                    <p class="role">Backend Lead</p>
+                    <p class="id-badge">ID: 2023732</p>
+                    <p class="role-desc">Core CRUD Logic & Algorithmic Doctor Matching.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="section-padding">
+            <div class="section-header">
+                <h2>Project Roadmap</h2>
+                <div class="header-line"></div>
+                <p style="color:var(--text-muted); margin-top:10px;">Executed via Critical Path Method (Dec 1 - Dec 21)</p>
+            </div>
+            <div class="timeline-box">
+                <div class="timeline-line"></div>
+                <div class="timeline-point">
+                    <div class="date">Dec 1-2</div>
+                    <div class="point-dot"></div>
+                    <div class="content"><strong>Initiation</strong><br>SRS & Requirements</div>
+                </div>
+                <div class="timeline-point">
+                    <div class="date">Dec 3-4</div>
+                    <div class="point-dot"></div>
+                    <div class="content"><strong>Planning</strong><br>DB Schema & CPM Analysis</div>
+                </div>
+                <div class="timeline-point">
+                    <div class="date">Dec 5-18</div>
+                    <div class="point-dot"></div>
+                    <div class="content"><strong>Execution</strong><br>CV & RAG Development</div>
+                </div>
+                <div class="timeline-point">
+                    <div class="date">Dec 21</div>
+                    <div class="point-dot"></div>
+                    <div class="content"><strong>Closure</strong><br>Final Deployment</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="section-padding">
+            <div class="demo-wrapper">
+                <div class="video-container">
+                    <video controls width="100%" class="video-player">
+                        <source src="Diagnosify_demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="demo-caption">
+                    <h3><i class="fas fa-play"></i> Live Walkthrough</h3>
+                    <p>See the Face Recognition and Chatbot in action.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="source" class="section-padding center-align">
+            <div class="github-card">
+                <h2><i class="fab fa-github"></i> Source Code</h2>
+                <p>Explore the repository including the RAG pipeline and CV models.</p>
+                <br>
+                <a href="https://github.com/raoabdulrafay05/diagnosify_site" class="btn btn-primary glow-effect" target="_blank">
+                    View Repository
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Diagnosify &copy; 2025 | CS331 SEPM Final Project</p>
+    </footer>
+
+    <script>
+        // FADE IN ANIMATION
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('hidden');
+            observer.observe(section);
+        });
+
+        // SCROLL PROGRESS BAR
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        };
+
+        // STATS COUNTER ANIMATION
+        const statsSection = document.querySelector("#stats");
+        let statsAnimated = false;
+        const statsObserver = new IntersectionObserver((entries) => {
+            if(entries[0].isIntersecting && !statsAnimated) {
+                const counters = document.querySelectorAll('.counter');
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-target');
+                    const inc = target / 200;
+                    const updateCount = () => {
+                        const count = +counter.innerText;
+                        if(count < target) {
+                            counter.innerText = Math.ceil(count + inc);
+                            setTimeout(updateCount, 20);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+                statsAnimated = true;
+            }
+        });
+        statsObserver.observe(statsSection);
+    </script>
+</body>
+</html>
